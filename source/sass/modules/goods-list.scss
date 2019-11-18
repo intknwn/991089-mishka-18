@@ -1,0 +1,28 @@
+.goods-list {
+  font-family: 'OpenSans';
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+
+  list-style: none;
+
+  &__item-link {
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &__item-link--decorations {
+    background-color: #63d1bb;
+  }
+
+  &__item-link--toys {
+    background-color: #56c3b2;
+  }
+}

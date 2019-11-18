@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин «Мишка»</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__heading page-main__heading--index">Милые штуки ручной работы для дома</h1>
+    <h1 class="page-heading page-main__heading page-main__heading--index">Милые штуки ручной работы для дома</h1>
 
     <section class="goods">
       <ul class="goods-list">
@@ -51,8 +52,8 @@
     </section>
 
     <section class="popular-item">
-      <h2>Товар недели</h2>
-      <h3 class="popular-item__heading">Вязаные корзинки</h3>
+      <h2 class="visually-hidden">Товар недели</h2>
+      <h3 class="heading popular-item__heading">Вязаные корзинки</h3>
       <b class="popular-item__week">Товар недели</b>
       <p class="popular-item__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
@@ -78,7 +79,7 @@
     </section>
 
     <section class="advantages">
-      <h2 class="visually-hidden">Коротко о нас:</h2>
+      <h2 class="heading advantages__heading">Коротко о нас:</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
         <li class="advantages__item advantages__item--style">Скандинавский стиль по российской цене</li>
@@ -91,7 +92,7 @@
 
   </main>
 
-  <footer>
+  <footer class="page-footer">
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
@@ -111,11 +112,11 @@
         </li>
       </ul>
     </div>
-    <div class="developer">
-      <p class="developer__text">Разработано</p>
-      <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+    <div class="developer-info">
+      <p class="developer-info__text">Разработано</p>
+      <a class="developer-info__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
-        <img class="developer__logo-image" src="https://via.placeholder.com/86x35" width="27" height="34"
+        <img class="developer-info__logo-image" src="https://via.placeholder.com/86x35" width="27" height="34"
           alt="Логотип HTML Academy">
       </a>
     </div>

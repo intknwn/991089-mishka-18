@@ -1,0 +1,46 @@
+.catalog-list {
+  margin: 0;
+  padding: 0;
+
+  color: #000000;
+  line-height: 24px;
+  font-family: 'OpenSans';
+
+  background-color: #ffffff;
+
+  list-style: none;
+
+  &__item {
+    margin-bottom: 30px;
+    outline: green solid 3px;
+  }
+
+  &__item-title-link {
+    color: #000000;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'OpenSans-Bold';
+
+    text-decoration: none;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__item-details {
+    color: #444444;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  &__item-price {
+    color: #000000;
+    font-size: 15px;
+    font-family: 'OpenSans-Bold';
+  }
+}

@@ -1,0 +1,34 @@
+.popular-item {
+  color: #444444;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'OpenSans';
+
+  background-color: #ffffff;
+
+  outline: fuchsia solid 3px;
+
+  &__week {
+    color: #63d1bb;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: 'OpenSans-Bold';
+
+    text-transform: uppercase;
+  }
+
+  &__description {
+    line-height: 24px;
+  }
+
+  &__properties {
+    line-height: 20px;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'OpenSans-Bold';
+  }
+}

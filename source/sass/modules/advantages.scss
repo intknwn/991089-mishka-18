@@ -1,0 +1,19 @@
+.advantages {
+  background-color: #ffffff;
+
+  outline: darkolivegreen solid 3px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    color: #000000;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: 'OpenSans-Bold';
+  }
+}
