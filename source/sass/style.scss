@@ -1,31 +1,30 @@
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/opensans.woff2'), url('../fonts/opensans.woff');
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff2"), url("../fonts/opensans.woff");
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('../fonts/opensansbold.woff2'), url('../fonts/opensansbold.woff');
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/opensansbold.woff2"), url("../fonts/opensansbold.woff");
 }
 
 body {
   margin: 0;
 }
 
-@import 'modules/page-header';
-@import 'modules/main-nav';
-@import 'modules/page-main';
-@import 'modules/site-list';
-@import 'modules/goods';
-@import 'modules/goods-list';
-@import 'modules/popular-item';
-@import 'modules/button';
-@import 'modules/heading';
-@import 'modules/advantages';
-@import 'modules/developer-info';
-@import 'modules/page-heading';
-@import 'modules/catalog-list';
-@import 'modules/page-footer';
-@import 'modules/social';
-@import 'modules/developer-info';
-@import 'modules/catalog';
+@import "modules/page-header";
+@import "modules/main-nav";
+@import "modules/page-main";
+@import "modules/site-list";
+@import "modules/goods";
+@import "modules/goods-list";
+@import "modules/popular-item";
+@import "modules/button";
+@import "modules/heading";
+@import "modules/advantages";
+@import "modules/developer-info";
+@import "modules/page-heading";
+@import "modules/catalog-list";
+@import "modules/page-footer";
+@import "modules/social";
+@import "modules/catalog";

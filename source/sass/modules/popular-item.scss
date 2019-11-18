@@ -2,7 +2,7 @@
   color: #444444;
   font-size: 15px;
   line-height: 24px;
-  font-family: 'OpenSans';
+  font-family: "OpenSans", "Arial", sans-serif;
 
   background-color: #ffffff;
 
@@ -13,7 +13,7 @@
     font-weight: bold;
     font-size: 17px;
     line-height: 20px;
-    font-family: 'OpenSans-Bold';
+    font-family: "OpenSans-Bold", "Arial", sans-serif;
 
     text-transform: uppercase;
   }
@@ -29,6 +29,6 @@
   &__price {
     font-weight: bold;
     font-size: 17px;
-    font-family: 'OpenSans-Bold';
+    font-family: "OpenSans-Bold", "Arial", sans-serif;
   }
 }
