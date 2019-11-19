@@ -1,0 +1,27 @@
+.goods-list {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+
+  list-style: none;
+}
+
+.goods-list__item-link {
+  color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--decorations {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+}

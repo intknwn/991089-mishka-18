@@ -1,0 +1,31 @@
+.popular-item {
+  color: #444444;
+  font-size: 15px;
+  line-height: 24px;
+
+  background-color: #ffffff;
+
+  outline: fuchsia solid 3px;
+}
+
+.popular-item__week {
+  color: #63d1bb;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+}
+
+.popular-item__description {
+  line-height: 24px;
+}
+
+.popular-item__properties {
+  line-height: 20px;
+}
+
+.popular-item__price {
+  font-weight: 700;
+  font-size: 17px;
+}
