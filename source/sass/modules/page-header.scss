@@ -1,12 +1,12 @@
 .page-header {
   background-color: #ececec;
+}
 
-  &__container {
-    padding-top: 22px;
-    padding-right: 31px;
-    padding-bottom: 22px;
-    padding-left: 31px;
+.page-header__container {
+  padding-top: 22px;
+  padding-right: 31px;
+  padding-bottom: 22px;
+  padding-left: 31px;
 
-    outline: purple solid 3px;
-  }
+  outline: purple solid 3px;
 }

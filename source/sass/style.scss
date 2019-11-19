@@ -1,17 +1,4 @@
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensans.woff2"), url("../fonts/opensans.woff");
-}
-
-@font-face {
-  font-family: "OpenSans-Bold";
-  src: url("../fonts/opensansbold.woff2"), url("../fonts/opensansbold.woff");
-}
-
-body {
-  margin: 0;
-}
-
+@import "modules/scaffolding";
 @import "modules/page-header";
 @import "modules/main-nav";
 @import "modules/page-main";

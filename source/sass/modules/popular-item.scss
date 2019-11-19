@@ -2,33 +2,30 @@
   color: #444444;
   font-size: 15px;
   line-height: 24px;
-  font-family: "OpenSans", "Arial", sans-serif;
 
   background-color: #ffffff;
 
   outline: fuchsia solid 3px;
+}
 
-  &__week {
-    color: #63d1bb;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
-    font-family: "OpenSans-Bold", "Arial", sans-serif;
+.popular-item__week {
+  color: #63d1bb;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
 
-    text-transform: uppercase;
-  }
+  text-transform: uppercase;
+}
 
-  &__description {
-    line-height: 24px;
-  }
+.popular-item__description {
+  line-height: 24px;
+}
 
-  &__properties {
-    line-height: 20px;
-  }
+.popular-item__properties {
+  line-height: 20px;
+}
 
-  &__price {
-    font-weight: bold;
-    font-size: 17px;
-    font-family: "OpenSans-Bold", "Arial", sans-serif;
-  }
+.popular-item__price {
+  font-weight: 700;
+  font-size: 17px;
 }

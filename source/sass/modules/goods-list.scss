@@ -1,28 +1,27 @@
 .goods-list {
-  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  font-weight: bold;
 
   list-style: none;
+}
 
-  &__item-link {
+.goods-list__item-link {
+  color: #ffffff;
+
+  &:hover {
     color: #ffffff;
-
-    &:hover {
-      color: #ffffff;
-    }
-
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
   }
 
-  &__item-link--decorations {
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--decorations {
     background-color: #63d1bb;
   }
 
-  &__item-link--toys {
+  &--toys {
     background-color: #56c3b2;
   }
 }
