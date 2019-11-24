@@ -11,8 +11,13 @@
 }
 
 .catalog-list__item {
+  width: 260px;
   margin-bottom: 30px;
   outline: green solid 3px;
+}
+
+.catalog-list__item-title {
+  margin: 0;
 }
 
 .catalog-list__item-title-link {
@@ -32,13 +37,73 @@
 }
 
 .catalog-list__item-details {
+  margin: 0;
   color: #444444;
   font-size: 13px;
   line-height: 30px;
 }
 
 .catalog-list__item-price {
+  margin: 0;
   color: #000000;
   font-weight: 700;
   font-size: 15px;
+}
+
+.catalog-list__layout-wrapper {
+  padding: 30px;
+}
+
+.catalog-list__price-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-list__item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .catalog-list__item-image {
+    width: 334px;
+    height: 334px;
+  }
+
+  .catalog-list__layout-wrapper {
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .catalog-list__item {
+    display: flex;
+    flex-direction: column;
+    width: 316px;
+    margin-bottom: 55px;
+  }
+
+  .catalog-list__item-image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .catalog-list__layout-wrapper {
+    width: 316px;
+    display: block;
+    box-sizing: border-box;
+  }
 }
