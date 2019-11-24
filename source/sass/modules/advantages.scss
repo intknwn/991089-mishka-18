@@ -4,6 +4,17 @@
   outline: darkolivegreen solid 3px;
 }
 
+.advantages__container {
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+}
+
+.advantages__heading {
+  margin-bottom: 30px;
+}
+
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -11,8 +22,83 @@
 }
 
 .advantages__item {
+  width: 260px;
+  margin-bottom: 30px;
+
   color: #000000;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
+  &::before {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &--eco {
+    &::before {
+      content: url("../img/icon-feature-flower.svg");
+    }
+  }
+
+  &--style {
+    &::before {
+      content: url("../img/icon-feature-money.svg");
+    }
+  }
+
+  &--likes {
+    &::before {
+      content: url("../img/icon-feature-heart.svg");
+    }
+  }
+
+  &--love {
+    &::before {
+      content: url("../img/icon-feature-ball.svg");
+    }
+  }
+
+  &--russian {
+    &::before {
+      content: url("../img/icon-feature-rocket.svg");
+    }
+  }
+
+  &--package {
+    &::before {
+      content: url("../img/icon-feature-gift.svg");
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__container {
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-left: 0;
+  }
+
+  .advantages__heading {
+    margin-bottom: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__container {
+    width: 873px;
+    padding-left: 175px;
+  }
 }

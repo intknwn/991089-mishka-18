@@ -3,3 +3,19 @@
 
   background-color: #ffffff;
 }
+
+.catalog__container {
+  padding: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__container {
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__container {
+    padding-top: 110px;
+  }
+}

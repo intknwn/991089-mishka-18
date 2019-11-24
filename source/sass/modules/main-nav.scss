@@ -1,3 +1,9 @@
 .main-nav {
   outline: yellow solid 3px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    margin-left: auto;
+  }
+}

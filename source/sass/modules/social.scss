@@ -5,7 +5,34 @@
 }
 
 .social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.social__link {
+  margin-right: 20px;
+  margin-left: 20px;
+
+  &--instagram {
+    &::before {
+      content: url("../img/icon-insta.svg");
+    }
+  }
+
+  &--facebook {
+    &::before {
+      content: url("../img/icon-fb.svg");
+    }
+  }
+
+  &--twitter {
+    &::before {
+      content: url("../img/icon-twitter.svg");
+    }
+  }
 }
