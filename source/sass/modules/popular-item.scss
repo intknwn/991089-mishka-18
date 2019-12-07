@@ -4,8 +4,6 @@
   line-height: 24px;
 
   background-color: #ffffff;
-
-  outline: fuchsia solid 3px;
 }
 
 .popular-item__heading-wrapper {
@@ -14,12 +12,12 @@
 
 .popular-item__heading {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .popular-item__container {
   min-width: 260px;
-  padding-top: 34px;
+  padding-top: 28px;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 35px;
@@ -27,7 +25,7 @@
 
 .popular-item__week {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 
   color: #63d1bb;
   font-weight: 700;
@@ -43,32 +41,57 @@
 
 .popular-item__description {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 15px;
   line-height: 24px;
 }
 
 .popular-item__properties {
   line-height: 20px;
-  margin-bottom: 42px;
+  margin-bottom: 27px;
+
+  border-collapse: collapse;
+}
+
+.popular-item__property {
+  width: 95px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.popular-item__property-value {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.popular-item__row {
+  border-bottom: 1px solid #ededed;
 }
 
 .popular-item__image {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .popular-item__price {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 17px;
+  text-align: center;
+}
+
+.popular-item__order-button {
+  width: 100%;
+  height: 52px;
 }
 
 @media (min-width: $tablet-width) {
   .popular-item {
-    height: 600px;
+    height: 608px;
   }
 
   .popular-item__container {
+    padding: 0;
+    padding-top: 45px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -77,30 +100,51 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    min-height: 50px;
+    margin-bottom: 50px;
   }
 
   .popular-item__heading {
-    margin-bottom: 55px;
+    margin: 0;
     z-index: 1;
   }
 
   .popular-item__description {
-    margin-bottom: 55px;
+    margin-bottom: 35px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .popular-item__week {
     width: 70px;
+    margin: 0;
+    margin-top: 2px;
+    margin-right: 27px;
+
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
   }
 
   .popular-item__description-wrapper {
     width: 292px;
   }
 
+  .popular-item__properties {
+    margin-bottom: 52px;
+  }
+
+  .popular-item__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+
   .popular-item__image {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 336px;
 
     width: 333px;
@@ -110,29 +154,45 @@
 
 @media (min-width: $desktop-width) {
   .popular-item {
-    height: 763px;
+    height: 780px;
   }
 
   .popular-item__container {
-    padding-top: 134px;
+    padding-top: 123px;
   }
 
   .popular-item__heading-wrapper {
     padding-left: 175px;
   }
 
+  .popular-item__heading {
+    margin-left: -4px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   .popular-item__description-wrapper {
     padding-left: 175px;
   }
 
+  .popular-item__description {
+    margin-bottom: 47px;
+  }
+
+  .popular-item__properties {
+    margin-bottom: 107px;
+  }
+
   .popular-item__week {
     position: absolute;
-    left: 0;
+
+    left: 45px;
   }
 
   .popular-item__image {
     left: 525px;
-    top: -166px;
+    top: -161px;
 
     width: 525px;
     height: 636px;

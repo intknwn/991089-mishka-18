@@ -1,6 +1,4 @@
 .catalog {
-  outline: blue solid 3px;
-
   background-color: #ffffff;
 }
 
@@ -10,12 +8,12 @@
 
 @media (min-width: $tablet-width) {
   .catalog__container {
-    padding-top: 70px;
+    padding-top: 78px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__container {
-    padding-top: 110px;
+    padding-top: 127px;
   }
 }

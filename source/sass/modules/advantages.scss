@@ -1,7 +1,8 @@
 .advantages {
   background-color: #ffffff;
-
-  outline: darkolivegreen solid 3px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
 }
 
 .advantages__container {
@@ -38,67 +39,138 @@
   &--eco {
     &::before {
       content: url("../img/icon-feature-flower.svg");
+      width: 32px;
+      height: 37px;
+      margin-left: 7px;
     }
   }
 
   &--style {
+    margin-bottom: 33px;
+
     &::before {
       content: url("../img/icon-feature-money.svg");
+      width: 47px;
+      height: 27px;
+      margin-bottom: 25px;
     }
   }
 
   &--likes {
+    margin-bottom: 33px;
+
     &::before {
       content: url("../img/icon-feature-heart.svg");
+      width: 33px;
+      height: 28px;
+
+      margin-left: 7px;
     }
   }
 
   &--love {
     &::before {
       content: url("../img/icon-feature-ball.svg");
+      width: 34px;
+      height: 34px;
+
+      margin-left: 3px;
+      margin-bottom: 18px;
     }
   }
 
   &--russian {
     &::before {
       content: url("../img/icon-feature-rocket.svg");
+      width: 54px;
+      height: 23px;
+
+      margin-left: -5px;
+      margin-bottom: 29px;
     }
   }
 
   &--package {
     &::before {
       content: url("../img/icon-feature-gift.svg");
+      width: 33px;
+      height: 32px;
+
+      margin-left: 2px;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    background-size: auto 15px;
+    background-position-x: -15px;
+  }
+
   .advantages__container {
     margin: 0 auto;
-    padding-top: 60px;
+    padding: 0;
+    padding-top: 65px;
     padding-left: 0;
   }
 
   .advantages__heading {
     margin-bottom: 50px;
+    margin-left: -5px;
   }
 
   .advantages__list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+
+    height: 480px;
   }
 
   .advantages__item {
+    margin-right: 72px;
+    margin-bottom: 55px;
+
     font-size: 20px;
     line-height: 22px;
+
+    &--style {
+      margin-bottom: 68px;
+    }
+
+    &--love {
+      margin-bottom: 62px;
+    }
+
+    &--russian {
+      width: 300px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__container {
     width: 873px;
+
+    padding-top: 83px;
     padding-left: 175px;
+  }
+
+  .advantages {
+    background-position-x: -21px;
+    background-size: auto 21px;
+  }
+
+  .advantages__heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .advantages__list {
+    align-content: flex-start;
+  }
+
+  .advantages__item {
+    margin-right: 87px;
   }
 }
