@@ -12,10 +12,11 @@
 }
 
 .site-list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   height: 79px;
   padding-left: 76px;
-
-  line-height: 79px;
 }
 
 .site-list__item-link {
@@ -29,6 +30,46 @@
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
+
+  &--cart {
+    position: relative;
+
+    &:hover .site-list__cart-icon path {
+      fill: #63d1bb;
+      opacity: 1;
+    }
+
+    &:active .site-list__cart-icon path {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
+  }
+
+  &--search {
+    position: relative;
+
+    &:hover .site-list__search-icon path {
+      fill: #63d1bb;
+      opacity: 1;
+    }
+
+    &:active .site-list__search-icon path {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
+  }
+}
+
+.site-list__cart-icon,
+.site-list__search-icon {
+  position: absolute;
+  left: -42px;
+  top: 3px;
+}
+
+.site-list__cart-icon path,
+.site-list__search-icon path {
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,33 +82,66 @@
     height: 88px;
     padding-left: 0;
 
-    line-height: 88px;
+    &--search {
+      justify-content: center;
+      width: 82px;
+      border-right: 1px solid #ededed;
+      border-left: 1px solid #ededed;
+    }
+
+    &--cart {
+      justify-content: flex-end;
+      width: 264px;
+    }
 
     &--catalog,
     &--made-to-order {
       display: none;
     }
   }
+
+  .site-list__item-link {
+    &--search {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .site-list__search-icon {
+    position: static;
+  }
+
+  .site-list__cart-icon {
+    left: -50px;
+  }
+
+  .site-list__search-text {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .site-list__item {
     &--catalog {
-      display: block;
+      display: inherit;
       width: 184px;
+
+      border-right: 1px solid #ededed;
     }
 
     &--made-to-order {
-      display: block;
-      width: 516px;
+      display: inherit;
+      width: 482px;
+
+      padding-left: 32px;
     }
 
     &--cart {
-      width: 276px;
+      width: 264px;
     }
 
     &--search {
-      width: 72px;
+      width: 83px;
       font-size: 0;
     }
   }

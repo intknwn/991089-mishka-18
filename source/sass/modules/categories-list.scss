@@ -17,6 +17,14 @@
   flex-direction: row;
   height: 103px;
   width: 100%;
+
+  &:hover {
+    height: 108px;
+  }
+}
+
+.categories-list__item:hover > .categories-list__link {
+  height: 108px;
 }
 
 .categories-list__link {
@@ -26,7 +34,7 @@
   width: 100%;
   height: 103px;
 
-  padding-left: 39px;
+  padding-left: 29px;
 
   color: #ffffff;
 
@@ -43,18 +51,59 @@
   &--interior {
     background-color: #63d1bb;
 
+    &::after {
+      content: url("../img/icon-interior.svg");
+      width: 40px;
+      height: 62px;
+      align-self: center;
+
+      margin-top: 7px;
+      margin-left: auto;
+      margin-right: 36px;
+
+      opacity: 0.5;
+    }
+
     &:hover,
     &:active {
       background-color: #59d5bc;
     }
+
+    &:hover::after {
+      opacity: 0.7;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
   }
 
   &--toys {
+    &::after {
+      content: url("../img/icon-toy.svg");
+      width: 60px;
+      height: 62px;
+      align-self: center;
+
+      margin-left: auto;
+      margin-right: 26px;
+
+      opacity: 0.5;
+    }
+
     background-color: #56c3b2;
 
     &:hover,
     &:active {
       background-color: #46c1ae;
+    }
+
+    &:hover::after {
+      opacity: 0.7;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 }
@@ -62,11 +111,42 @@
 .categories-list__link-text {
   align-self: center;
   width: 111px;
+  margin-top: -2px;
 }
 
 @media (min-width: $tablet-width) {
   .categories-list {
     flex-direction: row;
     justify-content: space-between;
+
+    height: 119px;
+    padding-top: 5px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .categories-list__item {
+    height: 119px;
+
+    &:hover {
+      margin-top: -5px;
+      height: 124px;
+    }
+  }
+
+  .categories-list__item:hover > .categories-list__link {
+    height: 124px;
+  }
+
+  .categories-list__link {
+    padding-left: 35px;
+    height: 119px;
+
+    &--toys {
+      &::after {
+        margin-right: 34px;
+      }
+    }
   }
 }
