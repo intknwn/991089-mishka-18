@@ -57,13 +57,6 @@
     width: 112px;
     height: 46px;
 
-    &::before {
-      content: url("../img/logo-tablet.svg");
-      display: block;
-      width: 112px;
-      height: 46px;
-    }
-
     &:hover::before {
       opacity: 0.6;
     }
@@ -74,7 +67,8 @@
   }
 
   .page-header__logo-image {
-    display: none;
+    width: 112px;
+    height: 46px;
   }
 
   .page-header__main-nav-toggle {
@@ -94,12 +88,6 @@
     width: 149px;
     height: 72px;
 
-    &::before {
-      content: url("../img/logo-desktop.svg");
-      width: 149px;
-      height: 72px;
-    }
-
     &:hover {
       opacity: 0.6;
     }
@@ -107,5 +95,10 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
   }
 }
