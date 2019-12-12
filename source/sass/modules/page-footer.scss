@@ -37,11 +37,11 @@
     display: block;
     height: 100%;
 
-    &:hover .page-footer__logo-image path {
+    &:hover .page-footer__logo-image {
       fill: #46c1ae;
     }
 
-    &:active .page-footer__logo-image path {
+    &:active .page-footer__logo-image {
       opacity: 0.3;
     }
   }

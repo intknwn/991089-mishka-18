@@ -27,11 +27,11 @@
 .social__facebook-logo,
 .social__instagram-logo,
 .social__twitter-logo {
-  &:hover path {
+  &:hover {
     fill: #46c1ae;
   }
 
-  &:active path {
+  &:active {
     fill: #46c1ae;
     opacity: 0.3;
   }

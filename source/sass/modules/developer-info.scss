@@ -19,7 +19,7 @@
   color: #000000;
   text-decoration: none;
 
-  &:hover ~ .developer-info__logo-link path {
+  &:hover ~ .developer-info__logo-link {
     fill: #46c1ae;
   }
 
@@ -27,7 +27,7 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
-  &:active ~ .developer-info__logo-link path {
+  &:active ~ .developer-info__logo-link {
     opacity: 0.3;
   }
 }
@@ -35,11 +35,11 @@
 .developer-info__logo-image {
   margin-top: 7px;
 
-  &:hover path {
+  &:hover {
     fill: #46c1ae;
   }
 
-  &:active path {
+  &:active {
     fill: #46c1ae;
     opacity: 0.3;
   }
