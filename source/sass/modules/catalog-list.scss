@@ -99,13 +99,15 @@
     opacity: 1;
   }
 
-  &:hover .catalog-list__button-icon path {
+  &:hover .catalog-list__button-icon {
     fill: #63d1bb;
   }
 
   &:active {
     opacity: 0.3;
   }
+
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

@@ -20,6 +20,14 @@
 .page-header__logo {
   height: 35px;
   margin: 0 auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__main-nav-toggle {
@@ -56,14 +64,6 @@
     margin: 0;
     width: 112px;
     height: 46px;
-
-    &:hover::before {
-      opacity: 0.6;
-    }
-
-    &:active::before {
-      opacity: 0.3;
-    }
   }
 
   .page-header__logo-image {
@@ -87,14 +87,6 @@
   .page-header__logo {
     width: 149px;
     height: 72px;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   .page-header__logo-image {
