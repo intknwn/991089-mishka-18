@@ -12,7 +12,8 @@
     background-size: 575px auto;
   }
 
-  &--catalog {
+  &--catalog,
+  &--custom-order {
     height: 177px;
     background-image: none;
     background-color: #f1f1f1;
@@ -33,6 +34,10 @@
   &--catalog {
     margin: 0;
     margin-top: -5px;
+  }
+
+  &--custom-order {
+    letter-spacing: 0.05em;
   }
 }
 
@@ -73,6 +78,10 @@
       margin-top: 0;
       margin-bottom: auto;
     }
+
+    &--custom-order {
+      margin-top: 52px;
+    }
   }
 
   .summary__sub-nav-wrapper {
@@ -81,6 +90,10 @@
     &--catalog {
       padding-top: 17px;
       margin-bottom: 55px;
+    }
+
+    &--custom-order {
+      padding-top: 16px;
     }
   }
 
@@ -110,6 +123,11 @@
       background-image: url("../img/bg-zigzag-fill.svg");
       background-size: contain;
     }
+
+    &--custom-order {
+      height: 226px;
+      background-image: none;
+    }
   }
 
   .summary__delivery-note {
@@ -131,6 +149,11 @@
       background-image: none;
     }
 
+    &--custom-order {
+      height: 255px;
+      background-image: none;
+    }
+
     &::after {
       height: 36px;
       bottom: -18px;
@@ -145,6 +168,10 @@
 
     &--catalog {
       margin-top: 0;
+    }
+
+    &--custom-order {
+      margin-top: 55px;
     }
   }
 }

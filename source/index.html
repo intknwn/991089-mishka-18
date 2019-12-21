@@ -121,16 +121,20 @@
             </tbody>
           </table>
           <picture>
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <source media="(min-width: 1150px)"
+              srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
             <img class="popular-item__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
               width="260" height="315" alt="Вязаные корзинки">
           </picture>
           <p class="popular-item__price">Цена: 990 руб.</p>
-          <button class="popular-item__order-button button">Заказать</button>
+          <a class="popular-item__order-button button" href="popular-item.html">Заказать</a>
         </div>
       </div>
     </section>
@@ -146,6 +150,62 @@
           <li class="advantages__item advantages__item--russian">Поддержка отечественного производителя</li>
           <li class="advantages__item advantages__item--package">Поставляется в подарочной&nbsp;упаковке</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container reviews__container">
+        <div class="reviews__content">
+          <h2 class="reviews__heading">Отзывы</h2>
+          <ul class="reviews__list">
+            <li class="reviews__list-item">
+              <p class="reviews_text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                лайков, как у популярных
+                инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали
+                более
+                стильными, а также набирают больше лайков!</p>
+              <p class="reviews__author">Анастасия Красильникова</p>
+              <p class="reviews__user-name">@misssssiskras</p>
+            </li>
+          </ul>
+        </div>
+        <div class="reviews__arrow-buttons">
+          <button class="reviews__arrow-button reviews__arrow-button--previous">
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="reviews__arrow-button reviews__arrow-button--next">
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+        <a class="button reviews__button" href="reviews.html">Написать</a>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container contacts__container">
+        <h2 class="heading contacts__heading">Контакты</h2>
+        <table class="contacts__table">
+          <tbody class="contacts__table-body">
+            <tr class="contacts__table-row contacts__table-row--email">
+              <td class="contacts__table-data contacts__table-data--email">e-mail:</td>
+              <td class="contacts__table-data"><a class="contacts__email-link"
+                  href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            </tr>
+            <tr class="contacts__row contacts__table-row--address">
+              <td class="contacts__table-data contacts__table-data--address">адрес:</td>
+              <td class="contacts__table-data">
+                г. Санкт-Петербург,<br>
+                ул. Большая Конюшенная, <br>
+                д. 19/8, офис 101
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="contacts__map-container">
+          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CGt5uQ3Q" width="320"
+            height="457"></iframe>
+        </div>
+        <a class="button contacts__button" href="contact.html">Напишите нам</a>
       </div>
     </section>
 
@@ -186,8 +246,10 @@
         </ul>
       </div>
       <div class="developer-info">
-        <a class="developer-info__text-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">Разработано</a>
-        <a class="developer-info__logo-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+        <a class="developer-info__text-link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Сайт HTML Academy">Разработано</a>
+        <a class="developer-info__logo-link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Сайт HTML Academy">
           <svg class="developer-info__logo-image" role="img" width="27" height="34">
             <use xlink:href="img/sprite.svg#academy-icon"></use>
           </svg>
@@ -196,8 +258,38 @@
     </div>
   </footer>
 
+  <section class="modal modal--hidden">
+    <div class="modal__container">
+      <h2 class="modal__heading">Добавить в корзину</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="modal__fieldset">
+          <legend class="modal__legend">Выберите размер:</legend>
+          <ul class="modal__options-list">
+            <li class="modal__options-list-item">
+              <input class="visually-hidden modal__radio-input" type="radio" name="size" value="S" id="size-s" checked>
+              <label class="modal__label" for="size-s">S</label>
+            </li>
+            <li class="modal__options-list-item">
+              <input class="visually-hidden modal__radio-input" type="radio" name="size" value="M" id="size-m">
+              <label class="modal__label" for="size-m">M</label>
+            </li>
+            <li class="modal__options-list-item">
+              <input class="visually-hidden modal__radio-input" type="radio" name="size" value="L" id="size-l">
+              <label class="modal__label" for="size-l">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button modal__submit" type="submit">Добавить</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
   <script src="js/svg4everybody.min.js"></script>
-  <script>svg4everybody();</script>
+  <script>
+    svg4everybody();
+
+  </script>
 
 </body>
 
