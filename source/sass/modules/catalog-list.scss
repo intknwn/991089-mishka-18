@@ -124,7 +124,6 @@
 
 @media (min-width: $tablet-width) {
   .catalog-list__item {
-    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -164,6 +163,7 @@
   }
 
   .catalog-list__layout-wrapper {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
