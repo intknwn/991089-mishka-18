@@ -55,7 +55,7 @@
 
   <main class="page-main">
     <section class="summary">
-      <div class="container summary__container">
+      <div class="container summary__container summary__container--main-page">
         <div class="summary__sub-nav-wrapper">
           <ul class="summary__nav sub-nav">
             <li class="sub-nav__item sub-nav__item--catalog">
@@ -184,23 +184,20 @@
     <section class="contacts">
       <div class="container contacts__container">
         <h2 class="heading contacts__heading">Контакты</h2>
-        <table class="contacts__table">
-          <tbody class="contacts__table-body">
-            <tr class="contacts__table-row contacts__table-row--email">
-              <td class="contacts__table-data contacts__table-data--email">e-mail:</td>
-              <td class="contacts__table-data"><a class="contacts__email-link"
-                  href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-            </tr>
-            <tr class="contacts__row contacts__table-row--address">
-              <td class="contacts__table-data contacts__table-data--address">адрес:</td>
-              <td class="contacts__table-data">
-                г. Санкт-Петербург,<br>
-                ул. Большая Конюшенная, <br>
-                д. 19/8, офис 101
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <dl class="contacts__list">
+          <div class="contacts__list-email">
+            <dt class="contacts__list-item">e-mail:</dt>
+            <dd class="contacts__list-item-value"><a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+          </div>
+          <div class="contacts__list-address">
+            <dt class="contacts__list-item">адрес:</dt>
+            <dd class="contacts__list-item-value">
+              г. Санкт-Петербург,<br>
+              ул. Большая Конюшенная,<br>
+              д. 19/8, офис 101
+            </dd>
+          </div>
+        </dl>
         <div class="contacts__map-container">
           <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CGt5uQ3Q" width="320"
             height="457"></iframe>
