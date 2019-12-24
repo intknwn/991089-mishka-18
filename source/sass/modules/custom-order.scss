@@ -1,0 +1,33 @@
+.custom-order__container {
+  padding: 30px;
+  padding-top: 22px;
+  padding-bottom: 0;
+}
+
+.custom-order__description {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .custom-order__description {
+    font-size: 17px;
+    line-height: 30px;
+
+    padding-top: 50px;
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .custom-order__description {
+    width: 672px;
+
+    margin-bottom: 76px;
+    padding-top: 97px;
+    padding-left: 175px;
+  }
+}

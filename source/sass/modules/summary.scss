@@ -12,7 +12,8 @@
     background-size: 575px auto;
   }
 
-  &--catalog {
+  &--catalog,
+  &--custom-order {
     height: 177px;
     background-image: none;
     background-color: #f1f1f1;
@@ -30,19 +31,21 @@
   text-align: center;
   letter-spacing: 0.06em;
 
-  &--catalog {
-    margin: 0;
-    margin-top: -5px;
+  &--custom-order {
+    letter-spacing: 0.05em;
   }
 }
 
 .summary__container {
-  height: 100%;
   display: flex;
   flex-direction: column;
 
-  &--catalog {
-    justify-content: center;
+  &--main-page {
+    height: 100%;
+  }
+
+  &--catalog,
+  &--custom-order {
     background-image: none;
   }
 }
@@ -69,9 +72,9 @@
 
     letter-spacing: normal;
 
-    &--catalog {
+    &--catalog,
+    &--custom-order {
       margin-top: 0;
-      margin-bottom: auto;
     }
   }
 
@@ -80,6 +83,11 @@
 
     &--catalog {
       padding-top: 17px;
+      margin-bottom: 55px;
+    }
+
+    &--custom-order {
+      padding-top: 16px;
       margin-bottom: 55px;
     }
   }
@@ -95,7 +103,8 @@
       background-size: 1150px auto;
     }
 
-    &--catalog {
+    &--catalog,
+    &--custom-order {
       height: 226px;
       background-image: none;
     }
@@ -126,7 +135,8 @@
       background-size: 1150px auto;
     }
 
-    &--catalog {
+    &--catalog,
+    &--custom-order {
       height: 255px;
       background-image: none;
     }
@@ -144,6 +154,10 @@
     line-height: 57px;
 
     &--catalog {
+      margin-top: -5px;
+    }
+
+    &--custom-order {
       margin-top: 0;
     }
   }

@@ -79,6 +79,7 @@
     </section>
 
     <section class="catalog page-main__catalog">
+      <h2 class="visually-hidden">Список товаров</h2>
       <div class="container catalog__container">
         <ul class="catalog-list">
           <li class="catalog-list__item">
@@ -107,11 +108,11 @@
               </div>
               <div class="catalog-list__price-wrapper">
                 <p class="catalog-list__item-price">1 200 руб.</p>
-                <button class="catalog-list__button" aria-label="Добавить в корзину">
+                <a class="catalog-list__button" href="order.html" aria-label="Добавить в корзину">
                   <svg class="catalog-list__button-icon" width="20" height="19" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#buy-icon"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </li>
@@ -141,17 +142,17 @@
               </div>
               <div class="catalog-list__price-wrapper">
                 <p class="catalog-list__item-price">690 руб.</p>
-                <button class="catalog-list__button" aria-label="Добавить в корзину">
+                <a class="catalog-list__button" href="order.html" aria-label="Добавить в корзину">
                   <svg class="catalog-list__button-icon" width="20" height="19" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#buy-icon"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </li>
           <li class="catalog-list__item">
             <a class="catalog-list__item-image-link catalog-list__item-image-link--toys" href="toystorage.html"
-              ria-label="На страницу товара «Большая корзинка для игрушек»">
+              aria-label="На страницу товара «Большая корзинка для игрушек»">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                   srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
@@ -176,15 +177,44 @@
               </div>
               <div class="catalog-list__price-wrapper">
                 <p class="catalog-list__item-price">1 500 руб.</p>
-                <button class="catalog-list__button" aria-label="Добавить в корзину">
+                <a class="catalog-list__button" href="order.html" aria-label="Добавить в корзину">
                   <svg class="catalog-list__button-icon" width="20" height="19" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#buy-icon"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="container video__container">
+        <div class="video__block">
+          <div class="video__playback-area">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260"
+                height="150" alt="Процесс производства">
+            </picture>
+            <svg class="video__play-button" role="img" width="101" height="77">
+              <use xlink:href="img/sprite.svg#play-button"></use>
+            </svg>
+          </div>
+          <div class="video__desc-container">
+            <h2 class="video__heading">Процесс производства</h2>
+            <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+              как появляются наши товары.</p>
+            <button class="button video__order-button">Сделать заказ</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -237,8 +267,38 @@
     </div>
   </footer>
 
+  <section class="modal modal--hidden">
+    <div class="modal__container">
+      <h2 class="modal__heading">Добавить в корзину</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="modal__fieldset">
+          <legend class="modal__legend">Выберите размер:</legend>
+          <ul class="modal__options-list">
+            <li class="modal__options-list-item">
+              <input class="visually-hidden modal__radio-input" type="radio" name="size" value="S" id="size-s" checked>
+              <label class="modal__label" for="size-s">S</label>
+            </li>
+            <li class="modal__options-list-item">
+              <input class="visually-hidden modal__radio-input" type="radio" name="size" value="M" id="size-m">
+              <label class="modal__label" for="size-m">M</label>
+            </li>
+            <li class="modal__options-list-item">
+              <input class="visually-hidden modal__radio-input" type="radio" name="size" value="L" id="size-l">
+              <label class="modal__label" for="size-l">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button modal__submit" type="submit">Добавить</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/catalog.js"></script>
   <script src="js/svg4everybody.min.js"></script>
-  <script>svg4everybody();</script>
+  <script>
+    svg4everybody();
+
+  </script>
 
 </body>
 

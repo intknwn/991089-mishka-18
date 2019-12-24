@@ -1,0 +1,166 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &--hidden {
+    display: none;
+  }
+
+  background-color: rgba($color: #ffffff, $alpha: 0.9);
+  z-index: 10;
+}
+
+.modal__container {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+
+  margin-top: -169px;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 46px;
+
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
+}
+
+.modal__heading {
+  margin: 0;
+  margin-bottom: 12px;
+  width: 150px;
+  align-self: center;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__fieldset {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.modal__legend {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.modal__options-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  list-style: none;
+}
+
+.modal__options-list-item {
+  width: 84px;
+  height: 52px;
+}
+
+.modal__label {
+  margin: 0;
+  padding: 0;
+
+  display: block;
+
+  width: 78px;
+  height: 48px;
+
+  line-height: 48px;
+  text-align: center;
+
+  border: 2px solid rgba($color: rgb(68, 68, 68), $alpha: 0.1);
+
+  &:hover {
+    border: 2px solid rgba($color: rgb(68, 68, 68), $alpha: 0.3);
+  }
+
+  &:active {
+    border: 2px solid #63d1bb;
+  }
+}
+
+.modal__submit {
+  width: 100%;
+  height: 52px;
+
+  color: #ffffff;
+  background-color: #63d1bb;
+  border-color: #63d1bb;
+
+  &:hover,
+  &:focus {
+    border-color: #444444;
+  }
+}
+
+.modal__radio-input {
+  &:checked + label,
+  &:focus + label {
+    border: 2px solid #63d1bb;
+  }
+
+  &:focus + label {
+    outline: #444444 1px solid;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal__container {
+    left: 50%;
+
+    width: 566px;
+
+    margin-top: -198px;
+    margin-left: -283px;
+
+    padding-top: 33px;
+    padding-right: 108px;
+    padding-left: 108px;
+  }
+
+  .modal__heading {
+    width: 100%;
+
+    font-size: 30px;
+    line-height: 57px;
+
+    letter-spacing: -0.2px;
+  }
+
+  .modal__legend {
+    font-size: 17px;
+  }
+
+  .modal__options-list-item {
+    width: 112px;
+  }
+
+  .modal__label {
+    width: 108px;
+  }
+}

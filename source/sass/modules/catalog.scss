@@ -9,11 +9,13 @@
 @media (min-width: $tablet-width) {
   .catalog__container {
     padding-top: 78px;
+    margin-bottom: 23px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__container {
+    margin-bottom: 27px;
     padding-top: 127px;
   }
 }

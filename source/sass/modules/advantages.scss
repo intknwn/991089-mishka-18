@@ -1,15 +1,15 @@
 .advantages {
   background-color: #ffffff;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-size: auto 6px;
 }
 
 .advantages__container {
   margin: 0;
   padding-top: 35px;
-  padding-bottom: 60px;
   padding-left: 30px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
 }
 
 .advantages__heading {
@@ -91,6 +91,8 @@
   }
 
   &--package {
+    margin-bottom: 0;
+
     &::before {
       content: url("../img/icon-feature-gift.svg");
       width: 33px;
@@ -102,16 +104,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages {
+  .advantages__container {
+    box-sizing: border-box;
+    width: 768px;
+
+    margin: 0 auto;
+    padding: 50px;
+    padding-top: 65px;
+    padding-bottom: 0;
+
     background-size: auto 15px;
     background-position-x: -15px;
-  }
-
-  .advantages__container {
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 65px;
-    padding-left: 0;
+    background-origin: padding-box;
   }
 
   .advantages__heading {
@@ -124,7 +128,7 @@
     flex-direction: column;
     flex-wrap: wrap;
 
-    height: 480px;
+    height: 490px;
   }
 
   .advantages__item {
@@ -134,8 +138,30 @@
     font-size: 20px;
     line-height: 22px;
 
+    &--eco {
+      &::before {
+        margin-bottom: 17px;
+      }
+    }
+
     &--style {
       margin-bottom: 68px;
+
+      &::before {
+        margin-bottom: 27px;
+      }
+    }
+
+    &--likes {
+      margin-bottom: 0;
+
+      &::before {
+        margin-bottom: 17px;
+      }
+    }
+
+    &--package {
+      margin-bottom: 0;
     }
 
     &--love {
@@ -150,14 +176,11 @@
 
 @media (min-width: $desktop-width) {
   .advantages__container {
-    width: 873px;
-
+    width: 1050px;
     padding-top: 83px;
     padding-left: 175px;
-  }
 
-  .advantages {
-    background-position-x: -21px;
+    background-position-x: -25px;
     background-size: auto 21px;
   }
 
@@ -168,6 +191,7 @@
 
   .advantages__list {
     align-content: flex-start;
+    height: 495px;
   }
 
   .advantages__item {
