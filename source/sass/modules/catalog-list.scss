@@ -208,16 +208,6 @@
     margin: 0;
   }
 
-  .catalog-list__toys-text {
-    display: none;
-  }
-
-  .catalog-list__item-details--toys {
-    &::before {
-      content: "Диаметр 30 см, высота 30 см";
-    }
-  }
-
   .catalog-list__layout-wrapper {
     flex-grow: 1;
     width: 316px;
