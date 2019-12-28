@@ -113,8 +113,8 @@
     padding-top: 65px;
     padding-bottom: 0;
 
-    background-size: auto 15px;
-    background-position-x: -15px;
+    background-size: 771px 15px;
+    background-position-x: 16px;
     background-origin: padding-box;
   }
 
@@ -156,11 +156,16 @@
       margin-bottom: 0;
 
       &::before {
-        margin-bottom: 17px;
+        margin-top: -4px;
+        margin-bottom: 21px;
       }
     }
 
     &--package {
+      &::before {
+        margin-bottom: 22px;
+      }
+
       margin-bottom: 0;
     }
 
@@ -196,5 +201,11 @@
 
   .advantages__item {
     margin-right: 87px;
+
+    &--russian {
+      &::before {
+        margin-bottom: 25px;
+      }
+    }
   }
 }

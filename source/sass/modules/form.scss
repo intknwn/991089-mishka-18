@@ -21,6 +21,10 @@
     padding-top: 25px;
   }
 
+  &--full-name {
+    padding-top: 29px;
+  }
+
   &--phone {
     padding-top: 8px;
     margin-bottom: 34px;
@@ -32,7 +36,9 @@
   }
 
   &--additional {
+    height: 158px;
     padding-top: 25px;
+    margin-bottom: 14px;
   }
 }
 
@@ -141,6 +147,12 @@
     }
   }
 
+  &--accessories {
+    &::before {
+      top: -6px;
+    }
+  }
+
   &--color {
     display: flex;
     align-items: center;
@@ -182,6 +194,23 @@
 
       border-radius: 50%;
     }
+
+    &:disabled + label::before {
+      border: 2px solid #444444;
+      opacity: 0.3;
+    }
+
+    &:disabled + label {
+      color: #444444;
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+  }
+
+  &--accessories {
+    &:checked + label::after {
+      top: 6px;
+    }
   }
 
   &:focus + label::before {
@@ -210,6 +239,17 @@
 
   &:focus + label::before {
     border: #62d1ba solid 2px;
+  }
+
+  &:disabled + label::before {
+    border: 2px solid #444444;
+    opacity: 0.3;
+  }
+
+  &:disabled + label {
+    color: #444444;
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 }
 
@@ -279,7 +319,6 @@
   height: 142px;
 
   margin: 0;
-  margin-bottom: 15px;
   padding: 15px;
 
   color: #444444;
@@ -434,7 +473,7 @@
       flex-direction: row;
       align-items: center;
       height: 52px;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
   }
 
@@ -449,6 +488,12 @@
       &::before {
         width: 48px;
         height: 48px;
+      }
+    }
+
+    &--accessories {
+      &::before {
+        top: 0;
       }
     }
 
@@ -542,7 +587,7 @@
 
         background-image: url("../img/icon-tick.svg");
         background-repeat: no-repeat;
-        background-size: 33px 33px;
+        background-size: 33px 22px;
         background-position: center;
       }
     }
@@ -588,6 +633,7 @@
 
   .form__options-list {
     &--type {
+      top: -18px;
       left: 175px;
     }
 

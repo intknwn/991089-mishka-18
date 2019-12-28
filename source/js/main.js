@@ -6,6 +6,7 @@ function addEventsMain () {
   var modalSubmit = document.querySelector(".modal__submit");
 
   menu.classList.add("main-nav--hidden");
+  menuToggle.classList.add("page-header__main-nav-toggle--shown");
   menuToggle.addEventListener("click", function (evt) {
     evt.preventDefault();
     if (menu.classList.contains("main-nav--hidden")) {

@@ -33,6 +33,7 @@
 }
 
 .page-header__main-nav-toggle {
+  display: none;
   position: absolute;
   top: 32px;
   right: 31px;
@@ -51,6 +52,10 @@
     width: 21px;
     height: 20px;
     background-image: url("../img/icon-menu-close.svg");
+  }
+
+  &--shown {
+    display: block;
   }
 }
 

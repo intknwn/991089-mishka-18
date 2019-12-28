@@ -14,15 +14,34 @@
   justify-content: center;
   align-items: center;
 
+  height: 28px;
+
   margin: 0;
+  margin-top: 12px;
   padding: 0;
   list-style: none;
+}
+
+.social__item {
+  height: 28px;
+  display: flex;
+  align-items: center;
 }
 
 .social__link {
   margin-right: 20px;
   margin-left: 20px;
   font-size: 0;
+
+  &--instagram {
+    margin-left: 14px;
+  }
+
+  &--facebook {
+    margin-top: -2px;
+    margin-right: 18px;
+    margin-left: 22px;
+  }
 }
 
 .social__facebook-logo,
@@ -39,6 +58,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social__link {
+    &--instagram {
+      margin-left: 20px;
+    }
+  }
+
   .social {
     margin-top: 5px;
     margin-left: 75px;

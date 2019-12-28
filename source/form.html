@@ -6,6 +6,10 @@
   <title>Вязание на заказ</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
 
 <body>
@@ -92,9 +96,9 @@
             <legend class="form__legend form__legend--type">Тип</legend>
             <ul class="form__options-list form__options-list--type">
               <li class="form__options-list-item form__options-list-item--type">
-                <input class="visually-hidden form__radio-input form__radio-input--order-type" type="radio"
+                <input class="visually-hidden form__radio-input form__radio-input--order-type form__radio-input--accessories" type="radio"
                   name="order-type" value="accessories" id="accessories-option" checked>
-                <label class="form__label form__label--order-type" for="accessories-option">Аксессуар для
+                <label class="form__label form__label--order-type form__label--accessories" for="accessories-option">Аксессуар для
                   интерьера</label>
               </li>
               <li class="form__options-list-item form__options-list-item--type">
@@ -243,9 +247,9 @@
         </ul>
       </div>
       <div class="developer-info">
-        <a class="developer-info__text-link" href="https://htmlacademy.ru/intensive/adaptive"
+        <a class="developer-info__text-link developer-info__text-link--form" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Сайт HTML Academy">Разработано</a>
-        <a class="developer-info__logo-link" href="https://htmlacademy.ru/intensive/adaptive"
+        <a class="developer-info__logo-link developer-info__logo-link--form" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Сайт HTML Academy">
           <svg class="developer-info__logo-image" role="img" width="27" height="34">
             <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
@@ -257,6 +261,7 @@
 
   <script src="js/scripts.min.js"></script>
   <script src="js/svg4everybody.min.js"></script>
+  <script src="js/picturefill.min.js"></script>
   <script>
     svg4everybody();
     addEventsForm();

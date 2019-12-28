@@ -6,7 +6,7 @@
 }
 
 .reviews__content {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .reviews__heading {
@@ -132,9 +132,12 @@
   }
 
   .reviews_text {
+    max-height: 90px;
     margin-bottom: 57px;
 
     font-size: 17px;
+
+    overflow: hidden;
   }
 
   .reviews__arrow-buttons {
