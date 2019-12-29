@@ -111,7 +111,7 @@
     padding: 50px;
     padding-top: 77px;
     width: 768px;
-    height: 457px;
+    min-height: 457px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -132,12 +132,9 @@
   }
 
   .reviews_text {
-    max-height: 90px;
     margin-bottom: 57px;
 
     font-size: 17px;
-
-    overflow: hidden;
   }
 
   .reviews__arrow-buttons {

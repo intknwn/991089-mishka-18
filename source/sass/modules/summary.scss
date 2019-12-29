@@ -1,5 +1,7 @@
 .summary {
-  height: 489px;
+  display: flex;
+  flex-direction: column;
+  min-height: 489px;
 
   background-color: #f9f9f9;
 
@@ -14,7 +16,7 @@
 
   &--catalog,
   &--custom-order {
-    height: 177px;
+    min-height: 177px;
     background-image: none;
     background-color: #f1f1f1;
   }
@@ -24,7 +26,6 @@
   align-self: center;
 
   width: 250px;
-  max-height: 120px;
 
   margin: 0;
   margin-top: 70px;
@@ -34,8 +35,6 @@
   text-align: center;
   letter-spacing: 0.06em;
 
-  overflow: hidden;
-
   &--custom-order {
     letter-spacing: 0.05em;
   }
@@ -44,9 +43,10 @@
 .summary__container {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 
   &--main-page {
-    height: 100%;
+    margin: 0;
   }
 
   &--catalog,
@@ -99,7 +99,7 @@
 
   .summary {
     position: relative;
-    height: 746px;
+    min-height: 746px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center 0;
 
@@ -110,7 +110,7 @@
 
     &--catalog,
     &--custom-order {
-      height: 226px;
+      min-height: 226px;
       background-image: none;
     }
 
@@ -123,6 +123,12 @@
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-size: contain;
+    }
+  }
+
+  .summary__container {
+    &--main-page {
+      margin: 0 auto;
     }
   }
 
@@ -149,7 +155,7 @@
 
     &--catalog,
     &--custom-order {
-      height: 255px;
+      min-height: 255px;
       background-image: none;
 
       &::after {

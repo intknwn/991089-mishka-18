@@ -86,7 +86,7 @@
 
 @media (min-width: $tablet-width) {
   .popular-item {
-    height: 608px;
+    min-height: 608px;
   }
 
   .popular-item__container {
@@ -154,7 +154,7 @@
 
 @media (min-width: $desktop-width) {
   .popular-item {
-    height: 780px;
+    min-height: 780px;
   }
 
   .popular-item__container {
